@@ -1,4 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+#pageTitle {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
+}
+
+body, h2, h3, p {
+    margin: 0;
+}
+
+body {
+    background-color: #B9DEE6;
+    display: flex;
+}
+
+.userCard {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 350px;
+    height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.userPhotoContainer {
+    position: relative;
+    margin-top: 10px;
+}
+
+.userPhoto {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #EFEFEF;
+    overflow: hidden;
+}
+
+.userPhoto img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.userFlag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: absolute;
+    top: 105px;
+    left: 105px;
+}
+
+.userFlag img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.userName {
+    font-weight: normal;
+    color: #FE512E;
+    margin-top: 30px;
+    font-size: 1.7rem;
+}
+
+.userStatus {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.userInfo {
+    margin-top: 30px;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.userSocialIconContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    width: 100%;
+}
+
+.userSocialIconContainer a {
+    text-decoration: none;
+    display: block;
+    border-radius: 100%;
+    margin: 0 10px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.userSocialIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.userSocialIconContainer a:hover {
+    background-color: lightgrey;
 }
